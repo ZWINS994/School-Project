@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* scrollbar-color: #4a4a4a; */
+    scrollbar-width: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    animation-name: backgronudchange;
+    animation-duration: 8s;
+    /* height: 2000px; */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    background-color: #4a4a4a;
+}
+
+/* navbar section */
+nav{
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: block;
+    line-height: 60px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    font-weight: lighter;
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.active, nav ul li a:hover {
+    border-bottom-width: 2px;
+    border-bottom: 2px solid #ffff;
+}
+
+.logo{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    color: #ffff;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 60px;
+    padding: 0 90px;
+}
+
+.btn{
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    padding: 20px;
+}
+
+#call{
+    animation-name: callanime;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    border-radius: 100px;
+    color: black;
+    background-color: #2dff5b;
+    padding: 15px 30px;
+    border: 2px solid black;
+}
+
+#massage{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    color: black;
+    background-color: #2dff5b;
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 15px 30px;
+}
+
+#massage:hover{
+    color: #ffff;
+    border: 2px solid white;
+    background-color: green;
+    transition-delay: 0.3s;
+    transition: 0.4s;
+}
+
+
+/* dot section */
+
+.dot1{
+    animation-name: firstdotanimation;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    height: 7px;
+    width: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #2d9eef;
+
+}
+
+.dot1{
+    animation-name: firstdotanimation;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    height: 7px;
+    width: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #2d9eef;
+
+}
+
+.dot2{
+    animation-name: animation2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    height: 7px;
+    width: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: red;
+
+}
+
+.dot3{
+    animation-name: animation2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    height: 7px;
+    width: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: yellow;
+
+}
+
+.dot4{
+    animation-name: animation4;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    width: 7px;
+    height: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: green;
+
+}
+
+.dot5{
+    animation-name: animation4;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+    width: 7px;
+    height: 7px;
+    z-index: 1;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: blue;
+
+}
+
+/* positioning of dotted logo */
+.dot1 .dot2 .dot3 {
+    position: relative;
+    display: flex;
+    top: 30px;
+    left: 35px;
+}
+
+.dot4 .dot5 {
+    position: relative;
+    display: flex;
+    top: 45px;
+    right: -5.5px;
+}
+
+.logodots a{
+    z-index: 2;
+    top: +20px;
+    position: fixed;
+    left: +20px;
+}
+
+/* animation for dot logo */
+/* first dot animation styling */
+
+@keyframes firstdotanimation{
+    from{
+        transform: translateX(-40px);
+    }
+    to{
+        transform: translateX(opx);
+    }
+}
+
+/* second dot animation styling */
+@keyframes animation2{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+/* third dot animation styling */
+@keyframes animation2{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+/* fouth dot styling */
+@keyframes animation4{
+    from{
+        transform: translateX(+20px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+/* fifth dot styling */
+@keyframes animation4{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+ /* amination for text name button and hyperlinks */
+
+ @keyframes zionwins{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+
+ }
+
+ /* end of fifth dot styling */
+
+/* animation for call button effect */
+@keyframes callanime{
+    0%{
+        background-color: #2dff5b;
+
+    }
+    50%{
+        background-color: crimson;
+    }
+    100%{
+        background-color: violet;
+    }
+
+}
+
+/* header section */
+
+header{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    color: #ffff;
+    font-size: 30px;
+    padding-top: 130px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    /* padding: 100px; */
+    /* padding-left: 50px; */
+}
+
+.general{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 40px 0px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffff;
+}
+
+.phoneback{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    position: absolute;
+    right: 350px;
+    top: 150px;
+    z-index: -1;
+    border-radius: 20px;
+    margin: 0 40px;
+    height: 410px;
+    width: 240px;
+    border: 2px solid white ;
+    transform: rotate(+22dec);
+    /* background-image: url(/asset/Images/Screenshot\ \(7\).png); */
+    background-color: black;
+
+}
+
+.secondlayer{
+    position: relative;
+    height: 400px;
+    padding: 50px;
+    background-color:beige;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+
+h1{
+    animation-name: zionwins;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px #4a4a4a;
+    backdrop-filter: blur(30px);
+    top: 65px;
+    right: 22%;
+    color: blue;
+}
+
+.gracias{
+    color: #ffff;
+    margin: 20px;
+
+}
+
+
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    color: #ffff;
+}
+
+
+@media (max-width 700px)[
+
+.footernav ul{
+    flex-direction: column;
+}
+.footernav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 0.5px;
+] 

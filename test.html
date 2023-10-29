@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            border: 2px solid black;
+            position: relative;
+
+        }
+        .circle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: blueviolet;
+            animation-name: bounce;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes bounce {
+            from {
+                bottom: 0;
+                right: 0;
+            }
+
+            to {
+                bottom: 290px;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

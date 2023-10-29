@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+header{
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    position: fixed;
+} 
+
+
+.logo2{
+    font-size: 9px;
+    padding-top: 25px;
+    color: blue;
+    gap: 5cm;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7cm;
+    padding-top: 25px ;
+    font-size: 16px;
+}
+
+
+.login-btn {
+    transition: all 0.5s ease-in-out;
+}
+
+
+.btn1 {
+    color: #fff;
+    background-color: blue;
+    height: 50px;
+    width: 140px;
+    border-radius: 30px;
+    border: 2px;
+    justify-content: center;
+    margin: 10px 40px;
+    cursor: pointer;
+    font-size: medium;
+    z-index: 5;
+}
+
+.btn1 a{
+    color: blue;
+}
+
+.btn a:hover{
+    border-bottom: 1px solid blue;
+}
+
+
+.roller-coaster{
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: space-between;
+    height: 670px;
+    position: relative;
+    width: 100%;
+}
+
+.spring{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: blue;
+    bottom: 0;
+    left: 400px;
+    /* margin-left: 1500px; */
+}
+
+@keyframes bounce {
+        from {
+            bottom: 0;
+        
+        }
+        to {
+            bottom: 600px;
+            
+        }
+}
+
+
+.spring1{
+    animation-name: bounce;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: yellow;
+    bottom: 0;
+    left: 300px;
+    /* margin-left: 1300px; */
+
+}
+
+
+.spring2{
+    animation-name: bounce;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: burlywood;
+    bottom: 0;
+    left: 250px;
+    /* margin-left: 1100px; */
+
+}
+
+.spring3{
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: rgba(red, green, blue, alpha);
+    bottom: 0;
+    left: 350px;
+
+}
+
+
+.spring4{
+    animation-name: bounce;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: peru;
+    bottom: 0;
+    left: 500px;
+
+}
+
+.spring5{
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 40px;
+    height: 40px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: navajowhite;
+    bottom: 0;
+    left: 600px;
+
+}
+
+.spring6{
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color:slateblue;
+    bottom: 0;
+    left: 650px;
+
+}
+
+.spring7{
+    animation-name: bounce;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: palegreen;
+    bottom: 0;
+    left: 700px;
+
+}
+
+.spring8{
+    animation-name: bounce;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color:sienna;
+    bottom: 0;
+    left: 150px;
+
+}
+
+.spring9{
+    animation-name: bounce;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: darkred;
+    bottom: 0;
+    left: 800px;
+}
+
+
+.spring10{
+    animation-name: bounce;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: khaki;
+    bottom: 0;
+    left: 100px;
+
+}
+
+
+.spring11{
+    animation-name: bounce;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 30px;
+    height: 30px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: aqua;
+    bottom: 0;
+    left: 950px;
+
+}
+
+
+.spring12{
+    animation-name: bounce;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color: gold;
+    bottom: 0;
+    left: 1000px;
+
+}
+
+
+.spring13{ 
+    animation-name: bounce;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 20px;
+    height: 20px;
+    /* margin: 20px; */
+    border-radius: 60px;
+    position: absolute;
+    background-color:purple;
+    bottom: 0;
+    left: 900px;
+}
+
+
+.spring14{
+    animation-name: bounce;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 40px;
+    height: 40px;
+    /* margin: 20px; */
+    border-radius: 80px;
+    position: absolute;
+    background-color: darkblue;
+    bottom: 800px;
+
+}
+
+.spring15{
+    animation-name: bounce;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 30px;
+    height: 30px;
+    /* margin: 20px; */
+    border-radius: 50px;
+    position: absolute;
+    background-color: crimson;
+    bottom: 0;
+    left: 700px;
+
+}
+
+
+
+
+
+
+
+
+
